@@ -92,16 +92,6 @@ namespace OnlineBanking.Controllers
             return NoContent();
         }
 
-        // POST: api/Employee
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        //[HttpPost]
-        //public async Task<ActionResult<Employee>> PostEmployee(Employee employee)
-        //{
-        //    _context.Employee.Add(employee);
-        //    await _context.SaveChangesAsync();
-
-        //    return CreatedAtAction("GetEmployee", new { id = employee.Id }, employee);
-        //}
 
         [HttpPost]
         public async Task<ActionResult<Employee>> PostEmployee(Employee employee)

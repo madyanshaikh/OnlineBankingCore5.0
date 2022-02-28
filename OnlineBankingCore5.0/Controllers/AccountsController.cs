@@ -34,13 +34,7 @@ namespace OnlineBankingCore5._0.Controllers
 
             return Ok(acc);
         }
-        [HttpGet]
-        [Route("getBranch")]
-        public async Task<ActionResult<IEnumerable<Branch>>> GetBranches()
-        {
-            var acc = await context.Branches.ToListAsync();
-
-            return Ok(acc);
-        }
+       
+ 
     }
 }
